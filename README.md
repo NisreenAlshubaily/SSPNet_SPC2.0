@@ -31,7 +31,7 @@ Contains the core data used across all experiments.
 * Folds.txt: Describes the 5-fold user-independent split applied across all experiments, ensuring no speaker appears in more than one fold.
 * Binarization_Method.txt: Explains how binary labels were derived from rater scores using median thresholding, including both the main (all raters) and experimental (filtered raters) approaches.
 #### c. Feature_Extraction/:
-* Paralanguage/: eGeMAPSv02 (LLDs and Functionals), Wav2vec2 (Encoder and Transformer outputs), Whisper (Encoder output).
+* Paralanguage/: TVs, eGeMAPSv02 (LLDs and Functionals), Wav2vec2 (Encoder and Transformer outputs), Whisper (Encoder output).
 * Language/: Word2Vec and BERT embeddings.
 #### d. Transcription_Extraction/: Automatically generated French transcriptions using Google ASR, along with the corresponding scripts and source files.
 #### e. Metadata/: Speaker-level information (Speaker ID, Gender, Status), a mapping between the original and new human-readable Clip IDs, and a script for metadata analysis and visualization.
@@ -80,15 +80,18 @@ Contains experiments using the original discrete BFI-10 annotations, following t
 A text file providing all the necessary information to understand and use the benchmarking framework.
 
 ## 🔁 Reproducibility Notes
+
 * Audio clips were resampled to 16kHz only for Wav2Vec2 and Whisper extraction, ensuring compatibility with these deep learning models.
+
 * Feature extraction was performed using the following tools and sources:
   * Paralanguage:
-    * eGeMAPSv02: Used with the openSMILE toolkit. Extracted two types of acoustic features - LLDs (25-dimensional per frame) and Functionals (88-dimensional per clip), using 25 ms windows and 10 ms overlap.
-    * Wav2Vec2.0: Used via HuggingFace Transformers. Provided two representations - Encoder output (512-dimensional per frame) and Transformer output from Layer 24 (1024-dimensional per frame).
-    * Whisper: Used with the SpeechBrain implementation. Extracted encoder-only outputs (384-dimensional per frame), excluding the decoder to avoid language bias.
+    * Vocal Tract Variables (TVs): Used with [APTAI](https://github.com/tobwei/APTAI) to extract articulatory features representing vocal tract movements and speech production dynamics.
+    * eGeMAPSv02: Used with the [openSMILE](https://github.com/audeering/opensmile/tree/master/config/egemaps/v02) toolkit. Extracted two types of acoustic features - LLDs (25-dimensional per frame) and Functionals (88-dimensional per clip), using 25 ms windows and 10 ms overlap.
+    * Wav2Vec2.0: Used via [HuggingFace Transformers](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french). Provided two representations - Encoder output (512-dimensional per frame) and Transformer output from Layer 24 (1024-dimensional per frame).
+    * Whisper: Used with the [SpeechBrain](https://github.com/speechbrain/speechbrain) implementation. Extracted encoder-only outputs (384-dimensional per frame), excluding the decoder to avoid language bias.
   * Language:
-    * Word2Vec: Used via HuggingFace to obtain static word-level embeddings (200-dimensional per token) from a pre-trained French Word2Vec model.
-    * BERT: Used via HuggingFace to generate contextual embeddings (300-dimensional per token) based on the BERT base model.
+    * Word2Vec: Used via [HuggingFace](https://huggingface.co/Word2vec/fauconnier_frWac_non_lem_no_postag_no_phrase_200_cbow_cut100/tree/main) to obtain static word-level embeddings (200-dimensional per token) from a pre-trained French Word2Vec model.
+    * BERT: Used via [HuggingFace](https://huggingface.co/flaubert/flaubert_base_uncased) to generate contextual embeddings (300-dimensional per token) based on the BERT base model.
 * Environment information is available in the Environment_Information/ folder.
 * Config files include the predefined fold assignments and selected hyperparameters for each experiment, ensuring consistent and repeatable evaluation.
 
