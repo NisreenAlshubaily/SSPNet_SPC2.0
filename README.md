@@ -33,7 +33,7 @@ Contains the core data used across all experiments.
 #### c. Feature_Extraction/:
 * Paralanguage/: TVs, eGeMAPSv02 (LLDs and Functionals), Wav2vec2 (Encoder and Transformer outputs), Whisper (Encoder output).
 * Language/: Word2Vec and BERT embeddings.
-#### d. Transcription_Extraction/: Automatically generated French transcriptions using Google ASR, along with the corresponding scripts and source files.
+#### d. Transcription_Extraction/: Automatically generated French transcriptions using [Google ASR](https://pypi.org/project/SpeechRecognition/), along with the corresponding scripts and source files.
 #### e. Metadata/: Speaker-level information (Speaker ID, Gender, Status), a mapping between the original and new human-readable Clip IDs, and a script for metadata analysis and visualization.
 #### f. Environment_Information/: Hardware and software setup to ensure full reproducibility (Python version, libraries, etc.).
 
