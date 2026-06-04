@@ -94,7 +94,7 @@ A text file providing all the necessary information to understand and use the be
 
 ## 📞 Contact
 
-For questions, feedback, bug reports, or collaboration opportunities related to the SSPNet Speaker Personality Corpus (SPC) V2.0, please contact:
+For dataset-related inquiries, please contact:
 
 * **Nisreen Alshubaily**
   University of Glasgow
