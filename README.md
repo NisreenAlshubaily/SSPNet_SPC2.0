@@ -93,14 +93,16 @@ A text file providing all the necessary information to understand and use the be
 * Config files include the predefined fold assignments and selected hyperparameters for each experiment, ensuring consistent and repeatable evaluation.
 
 ## 📞 Contact
-For dataset-related inquiries, please contact:
-Nisreen Alshubaily
-University of Glasgow
-Email: 2699698A@student.gla.ac.uk
-or
-Prof. Alessandro Vinciarelli
-University of Glasgow
-Email: Alessandro.Vinciarelli@glasgow.ac.uk
+
+For questions, feedback, bug reports, or collaboration opportunities related to the SSPNet Speaker Personality Corpus (SPC) V2.0, please contact:
+
+* **Nisreen Alshubaily**
+  University of Glasgow
+  [2699698A@student.gla.ac.uk](mailto:2699698A@student.gla.ac.uk)
+
+* **Prof. Alessandro Vinciarelli**
+  University of Glasgow
+  [Alessandro.Vinciarelli@glasgow.ac.uk](mailto:Alessandro.Vinciarelli@glasgow.ac.uk)
 ________________________________________________________________________________________________________________________________________________
 
 ## 📜 License
