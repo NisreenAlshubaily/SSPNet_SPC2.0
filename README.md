@@ -3,7 +3,7 @@
 
 The dataset is publicly available at the following link:
 
-[Access the dataset](https://gla-my.sharepoint.com/:f:/g/personal/2699698a_student_gla_ac_uk/IgB22Dtu1jX5SJR59mob6sI9AcjqLpYik9_7tusRcopOz9c?e=WeVox8)
+[Access the dataset](https://gla-my.sharepoint.com/:f:/g/personal/2699698a_student_gla_ac_uk/IgB22Dtu1jX5SJR59mob6sI9AcjqLpYik9_7tusRcopOz9c?e=shFVcS)
 
 ## 📌 Introduction
 This version of the SSPNet Speaker Personality Corpus (SPC) builds on the original release by addressing its main limitations and adding key enhancements to improve usability and research value. The main differences between the original version (V1) and the updated version (V2) are summarised below:
