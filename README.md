@@ -100,11 +100,11 @@ A text file providing all the necessary information to understand and use the be
 For dataset-related inquiries, please contact:
 
 * **Nisreen Alshubaily**
-  University of Glasgow
+  University of Glasgow,
   [2699698A@student.gla.ac.uk](mailto:2699698A@student.gla.ac.uk)
 
 * **Prof. Alessandro Vinciarelli**
-  University of Glasgow
+  University of Glasgow,
   [Alessandro.Vinciarelli@glasgow.ac.uk](mailto:Alessandro.Vinciarelli@glasgow.ac.uk)
 ________________________________________________________________________________________________________________________________________________
 
